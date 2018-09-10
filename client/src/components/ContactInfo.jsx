@@ -1,16 +1,38 @@
 import React from 'react';
 import Modal from './Modal.jsx';
+import ClockIcon from './icons/ClockIcon.jsx';
+import MapIcon from './icons/MapIcon.jsx';
+import PhoneIcon from './icons/PhoneIcon.jsx';
+import WebsiteIcon from './icons/WebsiteIcon.jsx';
+import DirectionsIcon from './icons/DirectionsIcon.jsx';
 
 const ContactInfo = () => {
   return (
     <div className="contact-container">
-      <h4>Restaurant Times</h4>
-      <h4>Address</h4>
-      <h4>Phone Number</h4>
-      <h4>Website</h4>
-      <h4>Get Directions</h4>
-      <h4>Map</h4>
-      <Modal />
+      <div className="restaurant-times">
+        <ClockIcon />
+        <p>Restaurant Times</p>
+      </div>
+      <div className="restaurant-address">
+        <MapIcon />
+        <p>Address</p>
+      </div>
+      <div className="restaurant-phoneNumber">
+        <PhoneIcon />
+        <p>Phone Number</p>
+      </div>
+      <div className="restaurant-website">
+        <WebsiteIcon />
+        <p>Website</p>
+      </div>
+      <div className="restaurant-directions">
+        <DirectionsIcon />
+        <p>Get Directions</p>
+      </div>
+      <div className="restaurant-map">
+        <Modal />
+        <p>Map</p>
+      </div>
     </div>
   );
 };
