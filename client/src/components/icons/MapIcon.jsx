@@ -4,7 +4,7 @@ const MapIcon = () => {
   return (
     <svg viewBox="0 0 24 24" version="1.1" height="24" weight="24">
       <title>location</title>
-      <g id="ZagX-Icons" stroke-width="1.5" fill="#b70038" fill-rule="evenodd">
+      <g id="ZagX-Icons" strokeWidth="1.5" fill="#b70038" fillRule="evenodd">
         <g id="location">
           <g id="Page-1" transform="translate(5.000000, 2.000000)">
             <path

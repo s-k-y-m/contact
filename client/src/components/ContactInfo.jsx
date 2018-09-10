@@ -6,32 +6,42 @@ import PhoneIcon from './icons/PhoneIcon.jsx';
 import WebsiteIcon from './icons/WebsiteIcon.jsx';
 import DirectionsIcon from './icons/DirectionsIcon.jsx';
 
-const ContactInfo = () => {
+const ContactInfo = props => {
+  const {
+    openNow,
+    name,
+    address,
+    phoneNumber,
+    websiteURL,
+    getDirectionsURL
+  } = props.restaurant;
+
+  console.log(openNow, name, address);
+
   return (
     <div className="contact-container">
       <div className="restaurant-times">
         <ClockIcon />
-        <p>Restaurant Times</p>
+        <p className="contact-text">Restaurant Times</p>
       </div>
       <div className="restaurant-address">
         <MapIcon />
-        <p>Address</p>
+        <p className="contact-text">{address}</p>
       </div>
       <div className="restaurant-phoneNumber">
         <PhoneIcon />
-        <p>Phone Number</p>
+        <p className="contact-text">{phoneNumber}</p>
       </div>
       <div className="restaurant-website">
         <WebsiteIcon />
-        <p>Website</p>
+        <p className="contact-text">{websiteURL}</p>
       </div>
       <div className="restaurant-directions">
         <DirectionsIcon />
-        <p>Get Directions</p>
+        <p className="contact-text">Get Directions</p>
       </div>
       <div className="restaurant-map">
         <Modal />
-        <p>Map</p>
       </div>
     </div>
   );
