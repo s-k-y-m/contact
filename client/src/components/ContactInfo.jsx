@@ -16,8 +16,6 @@ const ContactInfo = props => {
     getDirectionsURL
   } = props.restaurant;
 
-  console.log(openNow, name, address);
-
   return (
     <div className="contact-container">
       <div className="restaurant-times">
