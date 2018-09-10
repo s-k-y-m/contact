@@ -4,7 +4,7 @@ const ClockIcon = () => {
   return (
     <svg viewBox="0 0 24 24" version="1.1" height="24" weight="24">
       <title>hours</title>
-      <g id="ZagX-Icons" strokeWidth="1.5" fill="#b70038" fillRule="evenodd">
+      <g id="ZagX-Icons" strokeWidth="1.5" stroke="#b70038" fillRule="evenodd">
         <g id="hours">
           <g id="Page-1" transform="translate(3.000000, 3.000000)">
             <path

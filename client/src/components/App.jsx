@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactInfo from './ContactInfo.jsx';
 import axios from 'axios';
+import Scroll from './ScrollingPractice.jsx';
 
 var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
 var restaurant = fakeData.oneRestaurant;
@@ -32,10 +33,21 @@ class App extends React.Component {
   render() {
     const { restaurant } = this.state;
     return (
-      <div className="main-container">
-        <h1 className="logo">Zagat</h1>
-        <div className="placeholder" />
-        <ContactInfo restaurant={restaurant} />
+      <div>
+        <div className="main-container">
+          <h1 className="logo">Zagat</h1>
+          <div className="placeholder" />
+          <ContactInfo restaurant={restaurant} />
+        </div>
+        <div className="main-container">
+          <div className="placeholderTwo" />
+        </div>
+        <div className="main-container">
+          <div className="placeholderThree" />
+        </div>
+        <div className="main-container">
+          <div className="placeholderFour" />
+        </div>
       </div>
     );
   }
