@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
 class OpenNow extends React.Component {
   constructor() {
@@ -9,7 +10,6 @@ class OpenNow extends React.Component {
   }
 
   handleToggle() {
-    console.log('Toggled');
     this.setState({
       toggled: !this.state.toggled
     });
@@ -30,34 +30,48 @@ class OpenNow extends React.Component {
 
     if (this.state.toggled === true) {
       return (
-        <div className="schedule" onClick={this.handleToggle.bind(this)}>
-          <div className="Monday">
-            Monday.........................
-            {monday}
+        <div className="wholeSchedule">
+          <div
+            className="oneDaySchedule"
+            onClick={this.handleToggle.bind(this)}
+          >
+            <div>
+              <span className="openNowOneLine">Open Now</span>{' '}
+              {this.props.times[currentDay.toLowerCase()]}
+              <div>
+                <FaChevronDown />
+              </div>
+            </div>
           </div>
-          <div className="Tuesday">
-            Tuesday.........................
-            {tuesday}
-          </div>
-          <div className="Wednesday">
-            Wednesday.........................
-            {wednesday}
-          </div>
-          <div className="Thursday">
-            Thursday.........................
-            {thursday}
-          </div>
-          <div className="Friday">
-            Friday.........................
-            {friday}
-          </div>
-          <div className="Saturday">
-            Saturday.........................
-            {saturday}
-          </div>
-          <div className="Sunday">
-            Sunday.........................
-            {sunday}
+          <div className="schedule" onClick={this.handleToggle.bind(this)}>
+            <div id="Monday">
+              Monday.........................
+              {monday}
+            </div>
+            <div id="Tuesday">
+              Tuesday.........................
+              {tuesday}
+            </div>
+            <div id="Wednesday">
+              Wednesday.........................
+              {wednesday}
+            </div>
+            <div id="Thursday">
+              Thursday.........................
+              {thursday}
+            </div>
+            <div id="Friday">
+              Friday.........................
+              {friday}
+            </div>
+            <div id="Saturday">
+              Saturday.........................
+              {saturday}
+            </div>
+            <div id="Sunday">
+              Sunday.........................
+              {sunday}
+            </div>
           </div>
         </div>
       );
@@ -67,6 +81,9 @@ class OpenNow extends React.Component {
           <div>
             <span className="openNowOneLine">Open Now</span>{' '}
             {this.props.times[currentDay.toLowerCase()]}
+            <div>
+              <FaChevronDown />
+            </div>
           </div>
         </div>
       );

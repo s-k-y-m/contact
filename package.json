@@ -35,6 +35,8 @@
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "puppeteer": "^1.8.0",
+    "react-icons": "^3.0.5",
+    "semantic-ui-icon": "^2.3.3",
     "semantic-ui-react": "^0.82.3"
   },
   "devDependencies": {

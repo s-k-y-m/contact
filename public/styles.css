@@ -70,11 +70,32 @@ svg {
   font-family: 'Calibre-Regular';
 }
 
+/* Styling */
+.oneDaySchedule:hover {
+  color: #9c0029;
+}
+
+.restaurant-address:hover {
+  color: #9c0029;
+}
+.restaurant-phoneNumber:hover {
+  color: #9c0029;
+}
+.restaurant-website:hover {
+  color: #9c0029;
+}
+.restaurant-directions:hover {
+  color: #9c0029;
+}
+
+/* Hover  */
+
 .restaurant-times {
   display: flex;
   margin-bottom: 8px;
   margin: 4px 24px 4px 0;
 }
+
 .restaurant-address {
   display: flex;
   margin-bottom: 8px;
@@ -91,6 +112,7 @@ svg {
   display: flex;
   margin-bottom: 8px;
 }
+
 .contact-text {
   padding: 0px 10px;
 }
