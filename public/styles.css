@@ -47,42 +47,21 @@ path {
   padding: 24px 32px;
   margin-top: 50px;
   margin-right: 50px;
-  color: #101820;
   background-color: #ffffff;
-  letter-spacing: 0.013em;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 15px;
-  line-height: 20px;
-  font-family: 'Calibre-Regular';
 }
 
 .restaurant-times {
   display: flex;
-  margin-bottom: 8px;
 }
 .restaurant-address {
   display: flex;
-  margin-bottom: 8px;
 }
 .restaurant-phoneNumber {
   display: flex;
-  margin-bottom: 8px;
 }
 .restaurant-website {
   display: flex;
-  margin-bottom: 8px;
 }
 .restaurant-directions {
   display: flex;
-  margin-bottom: 8px;
-}
-
-.contact-text {
-  padding: 0px 10px;
 }
