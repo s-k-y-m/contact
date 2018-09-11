@@ -5,24 +5,8 @@ import MapIcon from './icons/MapIcon.jsx';
 import PhoneIcon from './icons/PhoneIcon.jsx';
 import WebsiteIcon from './icons/WebsiteIcon.jsx';
 import DirectionsIcon from './icons/DirectionsIcon.jsx';
-<<<<<<< HEAD
-//
-const ContactInfo = props => {
-  const {
-    openNow,
-    name,
-    address,
-    phoneNumber,
-    websiteURL,
-    getDirectionsURL
-  } = props.restaurant;
-
-  console.log(openNow, name, address);
-
-=======
 
 const ContactInfo = () => {
->>>>>>> ac090f55f964132e7c913372ea35af74bd6ced37
   return (
     <div className="contact-container">
       <div className="restaurant-times">
