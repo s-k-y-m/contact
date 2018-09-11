@@ -17,7 +17,6 @@ class App extends React.Component {
       .get('http://localhost:3005/restaurants/name')
       .then(data => {
         restaurant = data.data;
-        console.log('Restaurant', restaurant);
         this.setState({
           restaurant: restaurant
         });

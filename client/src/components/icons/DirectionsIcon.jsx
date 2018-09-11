@@ -4,7 +4,7 @@ const DirectionsIcon = () => {
   return (
     <svg viewBox="0 0 24 24" version="1.1" height="24" weight="24">
       <title>directions</title>
-      <g stroke-width="1.5" stroke="#b70038">
+      <g strokeWidth="1.5" stroke="#b70038">
         <g id="directions">
           <g id="Page-1" transform="translate(2.000000, 2.000000)">
             <polygon

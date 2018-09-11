@@ -5,6 +5,10 @@ import MapIcon from './icons/MapIcon.jsx';
 import PhoneIcon from './icons/PhoneIcon.jsx';
 import WebsiteIcon from './icons/WebsiteIcon.jsx';
 import DirectionsIcon from './icons/DirectionsIcon.jsx';
+import Sticky from './Sticky.jsx';
+import OpenNow from './OpenNow.jsx';
+
+var moment = require('moment');
 
 const ContactInfo = props => {
   const {
@@ -16,11 +20,15 @@ const ContactInfo = props => {
     getDirectionsURL
   } = props.restaurant;
 
+  var currentDay = moment().format('dddd');
+
   return (
     <div className="contact-container">
       <div className="restaurant-times">
         <ClockIcon />
-        <p className="contact-text">Restaurant Times</p>
+        <div className="contact-text">
+          <OpenNow times={openNow} currentDay={currentDay} />
+        </div>
       </div>
       <div className="restaurant-address">
         <MapIcon />
@@ -40,8 +48,8 @@ const ContactInfo = props => {
       </div>
       <div className="restaurant-map">
         <Modal />
-        <p>Map</p>
       </div>
+      <Sticky />
     </div>
   );
 };
