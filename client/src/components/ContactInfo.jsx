@@ -5,7 +5,7 @@ import MapIcon from './icons/MapIcon.jsx';
 import PhoneIcon from './icons/PhoneIcon.jsx';
 import WebsiteIcon from './icons/WebsiteIcon.jsx';
 import DirectionsIcon from './icons/DirectionsIcon.jsx';
-
+//
 const ContactInfo = props => {
   const {
     openNow,
