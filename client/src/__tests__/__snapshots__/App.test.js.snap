@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot testing should render correctly 1`] = `
+<div
+  className="main-container"
+>
+  <VelocityComponent
+    animation={
+      Object {
+        "rotateZ": 0,
+      }
+    }
+    duration={500}
+    interruptBehavior="stop"
+    runOnMount={false}
+    targetQuerySelector={null}
+  >
+    <h1
+      className="logo"
+      onClick={[Function]}
+    >
+      Zagat
+    </h1>
+  </VelocityComponent>
+  <div
+    className="placeholder"
+  />
+  <ContactInfo
+    restaurant={
+      Object {
+        "address": "510 Steve Harbors, Port Neoma, NV 98771, Togo ",
+        "getDirectionsURL": "https://www.google.com/maps/dir//37.776208,-122.4382592/@37.7761828,-122.5082486,12z",
+        "name": "Schneider - Heller",
+        "openNow": Object {
+          "friday": "10:30 AM - 10:00 PM",
+          "monday": "10:30 AM - 10:00 PM",
+          "saturday": "10:30 AM - 11:00 PM",
+          "sunday": "10:30 AM - 10:00 PM",
+          "thursday": "10:30 AM - 10:00 PM",
+          "tuesday": "10:30 AM - 10:00 PM",
+          "wednesday": "10:30 AM - 10:00 PM",
+        },
+        "phoneNumber": "1-477-437-2068 x02195",
+        "reviews": Array [
+          Object {
+            "date": "2018-09-06T13:00:40.804Z",
+            "image": "https://s3.amazonaws.com/uifaces/faces/twitter/pyronite/128.jpg",
+            "name": "Pauline Heidenreich",
+            "review": "Et consequatur sabeus dem lentarra un eckacks labore consectetur. Ratione cum quidem debitis rerum. Quas harum cupiditate. Ducimus similique ea sequi.",
+            "starRating": 2,
+          },
+          Object {
+            "date": "2018-09-06T11:42:47.713Z",
+            "image": "https://s3.amazonaws.com/uifaces/faces/twitter/BryanHorsey/128.jpg",
+            "name": "Rogelio Goldner",
+            "review": "Voluptatum voluptas veniam nostrum. Et dolore facilis temporibus aut est. Ut quod et modi eius totam asperiores esse voluptas voluptas. Aperiam totam minus rerum atque qui est.",
+            "starRating": 1,
+          },
+          Object {
+            "date": "2018-09-06T03:00:17.756Z",
+            "image": "https://s3.amazonaws.com/uifaces/faces/twitter/markolschesky/128.jpg",
+            "name": "Orion Kiehn",
+            "review": "Quos dolore asperiores. Aut animi illum error placeat dolorum exercitationem ab tenetur. Delectus nostrum aut necessitatibus quisquam qui consequatur quia non molestiae. Inventore inventore iste qui dolore eum.",
+            "starRating": 5,
+          },
+          Object {
+            "date": "2018-09-06T12:26:12.756Z",
+            "image": "https://s3.amazonaws.com/uifaces/faces/twitter/christianoliff/128.jpg",
+            "name": "Geovanny Collins",
+            "review": "Quo facere rerum doloremque pariatur exercitationem. Architecto voluptatem eligendi. Quia voluptatem tenetur delectus consectetur aut tenetur enim minus nesciunt.",
+            "starRating": 1,
+          },
+          Object {
+            "date": "2018-09-06T21:07:56.217Z",
+            "image": "https://s3.amazonaws.com/uifaces/faces/twitter/antonyzotov/128.jpg",
+            "name": "Jazlyn Hilll",
+            "review": "Eaque laborum molestias. Voluptatem nemo explicabo minus molestias voluptate voluptatibus dolorem aut. Inventore excepturi consequuntur officia ut necessitatibus suscipit sunt. Eum ut eum velit rerum.",
+            "starRating": 1,
+          },
+        ],
+        "streetViewLink": "https://www.google.com/maps/@37.7761963,-122.4382348,0a,104.2y,-77.74h,80.62t/data=!3m4!1e1!3m2!1sAF1QipOz-PL_7FJDu2cb4sM9QK9rHb0w9J-jER6gukKJ!2e10?source=apiv3",
+        "websiteURL": "http://loren.info",
+      }
+    }
+  />
+</div>
+`;

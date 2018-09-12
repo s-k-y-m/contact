@@ -7,6 +7,7 @@ import WebsiteIcon from './icons/WebsiteIcon.jsx';
 import DirectionsIcon from './icons/DirectionsIcon.jsx';
 import Sticky from './Sticky.jsx';
 import OpenNow from './OpenNow.jsx';
+import Map from './Map/Map.jsx';
 
 var moment = require('moment');
 
@@ -47,7 +48,7 @@ const ContactInfo = props => {
         <p className="contact-text">Get Directions</p>
       </div>
       <div className="restaurant-googleMap">
-        <iframe src="https://www.google.com/maps" />
+        <Map isMarkerShown />
       </div>
       <div className="restaurant-map">
         <Modal />
