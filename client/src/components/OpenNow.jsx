@@ -89,7 +89,7 @@ class OpenNow extends React.Component {
             <span className="inline">
               {this.props.times[currentDay.toLowerCase()]}
             </span>
-            <span className="inline">
+            <span className="inline chevron">
               <VelocityComponent
                 animation={{ rotateZ: this.state.expanded ? -180 : 0 }}
                 duration={250}
