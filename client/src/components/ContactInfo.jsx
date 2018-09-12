@@ -46,6 +46,9 @@ const ContactInfo = props => {
         <DirectionsIcon />
         <p className="contact-text">Get Directions</p>
       </div>
+      <div>
+        <iframe src="https://www.google.com/maps" />
+      </div>
       <div className="restaurant-map">
         <Modal />
       </div>
