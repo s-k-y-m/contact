@@ -3,8 +3,8 @@ import { FaChevronDown } from 'react-icons/fa';
 import { VelocityComponent } from 'velocity-react';
 
 class OpenNow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       toggled: false,
       expanded: false
@@ -28,33 +28,39 @@ class OpenNow extends React.Component {
       saturday,
       sunday
     } = this.props.times;
+
+    let currentDay = this.props.currentDay;
+
     return (
       <div className="schedule" onClick={this.handleToggle.bind(this)}>
-        <div id="Monday">
+        <div id="Monday" className={currentDay === 'Monday' ? 'bold' : ''}>
           Monday.........................
           {monday}
         </div>
-        <div id="Tuesday">
+        <div id="Tuesday" className={currentDay === 'Tuesday' ? 'bold' : ''}>
           Tuesday.........................
           {tuesday}
         </div>
-        <div id="Wednesday">
+        <div
+          id="Wednesday"
+          className={currentDay === 'Wednesday' ? 'bold' : ''}
+        >
           Wednesday.........................
           {wednesday}
         </div>
-        <div id="Thursday">
+        <div id="Thursday" className={currentDay === 'Thursday' ? 'bold' : ''}>
           Thursday.........................
           {thursday}
         </div>
-        <div id="Friday">
+        <div id="Friday" className={currentDay === 'Friday' ? 'bold' : ''}>
           Friday.........................
           {friday}
         </div>
-        <div id="Saturday">
+        <div id="Saturday" className={currentDay === 'Saturday' ? 'bold' : ''}>
           Saturday.........................
           {saturday}
         </div>
-        <div id="Sunday">
+        <div id="Sunday" className={currentDay === 'Sunday' ? 'bold' : ''}>
           Sunday.........................
           {sunday}
         </div>
@@ -73,7 +79,7 @@ class OpenNow extends React.Component {
       sunday
     } = this.props.times;
 
-    const currentDay = this.props.currentDay;
+    let currentDay = this.props.currentDay;
 
     return (
       <div className="wholeSchedule">
@@ -86,7 +92,7 @@ class OpenNow extends React.Component {
             <span className="inline">
               <VelocityComponent
                 animation={{ rotateZ: this.state.expanded ? -180 : 0 }}
-                duration={200}
+                duration={250}
               >
                 <FaChevronDown />
               </VelocityComponent>

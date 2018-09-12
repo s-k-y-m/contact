@@ -132,6 +132,10 @@ svg {
   margin-right: 10px;
 }
 
+.bold {
+  font-weight: bold;
+  color: #101820;
+}
 /* transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: ease;
