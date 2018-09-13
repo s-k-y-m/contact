@@ -4,7 +4,7 @@ const MapIcon = () => {
   return (
     <svg viewBox="0 0 24 24" version="1.1" height="24" weight="24">
       <title>location</title>
-      <g strokeWidth="1.5" stroke="#b70038" fillRule="evenodd">
+      <g strokeWidth="1.5" stroke="#b70038" fillRule="evenodd" fill="white">
         <g id="location">
           <g id="Page-1" transform="translate(5.000000, 2.000000)">
             <path d="M9.4744,6.9686 C9.4744,8.3526 8.3524,9.4746 6.9684,9.4746 C5.5844,9.4746 4.4624,8.3526 4.4624,6.9686 C4.4624,5.5846 5.5844,4.4626 6.9684,4.4626 C8.3524,4.4626 9.4744,5.5846 9.4744,6.9686 L9.4744,6.9686 Z" />

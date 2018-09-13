@@ -4,7 +4,7 @@ const WebsiteIcon = () => {
   return (
     <svg viewBox="0 0 24 24" version="1.1" height="24" weight="24">
       <title>website</title>
-      <g strokeWidth="1.5" stroke="#b70038" fillRule="evenodd">
+      <g strokeWidth="1.5" stroke="#b70038" fillRule="evenodd" fill="white">
         <g id="website">
           <g id="Page-1" transform="translate(1.500000, 3.000000)">
             <path

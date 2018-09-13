@@ -17,10 +17,10 @@ const Map = () => {
         scrolling="no"
         marginHeight="0"
         marginWidth="0"
+        className="iframe"
       >
         <a href="https://www.maps.ie/create-google-map/">Create Google Map</a>
       </iframe>
-      <Modal />
     </div>
   );
 };

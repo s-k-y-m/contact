@@ -30,7 +30,7 @@ path {
 }
 
 svg {
-  background: white;
+  background-color: white !important;
   margin: 0px 24px 4px 0;
 }
 
@@ -131,7 +131,11 @@ svg {
 }
 
 .restaurant-googleMap {
-  z-index: -1;
+}
+
+iframe {
+  top: 0;
+  left: 0;
 }
 
 .contact-text {
@@ -191,4 +195,8 @@ svg {
 .button:hover {
   background-color: #9c0029 !important;
   color: white !important;
+}
+
+.modal {
+  z-index: 4 !important;
 }

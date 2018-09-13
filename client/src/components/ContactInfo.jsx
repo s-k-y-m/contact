@@ -53,6 +53,9 @@ const ContactInfo = props => {
           <Map isMarkerShown />
         </div>
       </div>
+      <div>
+        <Modal className="modal" />
+      </div>
       <Sticky />
     </div>
   );
