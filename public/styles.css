@@ -200,3 +200,15 @@ iframe {
 .modal {
   z-index: 4 !important;
 }
+
+/* Sticky */
+.contact-container {
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+
+.placeHolderText {
+  width: 800px;
+}
