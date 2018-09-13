@@ -49,7 +49,7 @@ class App extends React.Component {
           </h1>
         </VelocityComponent>
         <div className="placeholder" />
-        <ContactInfo restaurant={restaurant} />
+        <ContactInfo className="contactInfo" restaurant={restaurant} />
       </div>
     );
   }

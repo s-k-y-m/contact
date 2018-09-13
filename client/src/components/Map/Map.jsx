@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../Modal.jsx';
 
 const mapStyle = {
   width: '100%',
@@ -19,6 +20,7 @@ const Map = () => {
       >
         <a href="https://www.maps.ie/create-google-map/">Create Google Map</a>
       </iframe>
+      <Modal />
     </div>
   );
 };

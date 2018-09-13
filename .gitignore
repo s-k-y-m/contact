@@ -24,3 +24,6 @@ coverage
 build/
 dist/
 
+## API KEYS ##
+client/src/config/googleMaps.js
+

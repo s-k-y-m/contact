@@ -3,10 +3,12 @@
   font-family: 'Calibre-Regular';
   src: url('./fonts/Calibre-Regular.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Calibre-Medium';
   src: url('./fonts/CalibreWeb-Medium.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Calibre-Semibold';
   src: url('./fonts/CalibreWeb-Semibold.woff') format('woff');
@@ -37,10 +39,12 @@ svg {
   color: #9c0029;
   font-size: 80px;
 }
+
 .main-container {
   display: flex;
   flex-direction: row;
 }
+
 .placeholder {
   flex: 2;
 }
@@ -72,6 +76,8 @@ svg {
 .oneDaySchedule {
   display: flex;
 }
+
+/* Hover */
 .oneDaySchedule:hover {
   color: #9c0029;
   cursor: pointer;
@@ -81,20 +87,23 @@ svg {
   color: #9c0029;
   cursor: pointer;
 }
+
 .restaurant-phoneNumber:hover {
   color: #9c0029;
   cursor: pointer;
 }
+
 .restaurant-website:hover {
   color: #9c0029;
   cursor: pointer;
 }
+
 .restaurant-directions:hover {
   color: #9c0029;
   cursor: pointer;
 }
 
-/* Hover  */
+/* Class Styling */
 .restaurant-times {
   display: flex;
   margin-bottom: 8px;
@@ -105,17 +114,24 @@ svg {
   display: flex;
   margin-bottom: 8px;
 }
+
 .restaurant-phoneNumber {
   display: flex;
   margin-bottom: 8px;
 }
+
 .restaurant-website {
   display: flex;
   margin-bottom: 8px;
 }
+
 .restaurant-directions {
   display: flex;
   margin-bottom: 8px;
+}
+
+.restaurant-googleMap {
+  z-index: -1;
 }
 
 .contact-text {
@@ -141,4 +157,38 @@ svg {
 .bold {
   font-weight: bold;
   color: #101820;
+}
+
+.contact-container {
+  overflow: scroll;
+  height: 500px;
+  width: 500px;
+}
+
+.button {
+  background-color: white !important;
+  color: #b70038 !important;
+  cursor: pointer !important;
+  height: 32px !important;
+  padding: 0 16px !important;
+  width: 176px !important;
+  z-index: 1 !important;
+  font-style: normal !important;
+  font-variant-ligatures: normal !important;
+  font-variant-caps: normal !important;
+  font-variant-numeric: normal !important;
+  font-variant-east-asian: normal !important;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.086em !important;
+  text-transform: uppercase !important;
+  font-family: 'Calibre-Medium' !important;
+  border-radius: 0 !important;
+}
+
+.button:hover {
+  background-color: #9c0029 !important;
+  color: white !important;
 }

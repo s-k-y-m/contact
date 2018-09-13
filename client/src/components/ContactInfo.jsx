@@ -8,6 +8,7 @@ import DirectionsIcon from './icons/DirectionsIcon.jsx';
 import Sticky from './Sticky.jsx';
 import OpenNow from './OpenNow.jsx';
 import Map from './Map/Map.jsx';
+import Map2 from './Map/Map2.jsx';
 
 var moment = require('moment');
 
@@ -47,11 +48,10 @@ const ContactInfo = props => {
         <DirectionsIcon />
         <p className="contact-text">Get Directions</p>
       </div>
-      <div className="restaurant-googleMap">
-        <Map isMarkerShown />
-      </div>
-      <div className="restaurant-map">
-        <Modal />
+      <div>
+        <div className="restaurant-googleMap">
+          <Map isMarkerShown />
+        </div>
       </div>
       <Sticky />
     </div>
