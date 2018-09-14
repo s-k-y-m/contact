@@ -47,14 +47,12 @@ const ModalModalExample = props => (
             <a href="https://www.maps.ie/create-google-map/">Get Directions</a>
           </iframe>
         </div>
-        <div className="ui button modalExpandButton">
-          <Button
-            href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;"
-            className="modalButton"
-          >
-            Get Directions
-          </Button>
-        </div>
+        <Button
+          href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;"
+          className="modalButton"
+        >
+          Get Directions
+        </Button>
       </Modal.Description>
     </Modal.Content>
   </Modal>
