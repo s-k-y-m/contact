@@ -54,7 +54,7 @@ const ContactInfo = props => {
         </div>
       </div>
       <div>
-        <Modal className="modal" />
+        <Modal className="modal" name={name} />
       </div>
       <Sticky />
     </div>
