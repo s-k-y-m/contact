@@ -30,7 +30,6 @@ path {
 }
 
 svg {
-  background-color: white !important;
   margin: 0px 24px 4px 0;
 }
 
@@ -129,9 +128,6 @@ svg {
   margin-bottom: 8px;
 }
 
-.restaurant-googleMap {
-}
-
 iframe {
   top: 0;
   left: 0;
@@ -165,7 +161,8 @@ iframe {
 .contact-container {
   overflow: scroll;
   height: 500px;
-  width: 500px;
+  width: 350px !important;
+  margin-left: 20px;
 }
 
 .button {
@@ -191,13 +188,12 @@ iframe {
   border-radius: 0 !important;
 }
 
-.button:hover {
-  background-color: #9c0029 !important;
-  color: white !important;
-}
-
 .modal {
   z-index: 4 !important;
+}
+
+.ui.modal {
+  width: 95%;
 }
 
 /* Sticky */
@@ -218,10 +214,20 @@ iframe {
 
 .mapTitle {
   text-align: center;
+  color: white;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Calibre-Medium';
 }
 
 .modalButton {
-  border: 2px solid #b70038;
   display: flex !important;
   height: 40px;
   text-align: center;
@@ -232,4 +238,39 @@ iframe {
   padding-left: 16px;
   margin: auto;
   align-items: center;
+}
+
+.expandMap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandButton svg {
+  margin: 0;
+  stroke: #9c0029;
+}
+
+.expandButton:hover,
+.expandButton:hover svg {
+  color: white !important;
+  stroke: white;
+  background-color: #9c0029 !important;
+}
+
+.expandMapText {
+  display: inline;
+  white-space: nowrap;
+}
+
+.modalButton {
+  padding: 0 16px !important;
+  border: 2px solid #9c0029 !important;
+}
+
+.modalButton:hover {
+  color: white !important;
+  background: #9c0029 !important;
+  padding: 0 16px !important;
+  border: 2px solid #9c0029 !important;
 }
