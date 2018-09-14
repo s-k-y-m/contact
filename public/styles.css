@@ -204,7 +204,7 @@ iframe {
 /* Sticky */
 .contact-container {
   position: sticky;
-  top: 0;
+  top: 2rem;
   position: -webkit-sticky;
   bottom: 0;
 }
