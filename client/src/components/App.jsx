@@ -2,7 +2,7 @@ import React from 'react';
 import ContactInfo from './ContactInfo.jsx';
 import axios from 'axios';
 import { VelocityComponent } from 'velocity-react';
-import '../styles/app.css';
+import styles from '../styles/app.css';
 
 var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
 var restaurant = fakeData.oneRestaurant;
@@ -49,8 +49,8 @@ class App extends React.Component {
             Zagat
           </h1>
         </VelocityComponent>
-        <div className="main-container">
-          <p className="placeHolderText placeholder">
+        <div className={styles.mainContainer}>
+          <p className={`${styles.placeHolderText} ${styles.placeholder}`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
             scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
@@ -294,9 +294,9 @@ class App extends React.Component {
             fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo
             purus. Mauris quis diam velit.
           </p>
-          <ContactInfo className="contactInfo" restaurant={restaurant} />
+          <ContactInfo className={styles.contactInfo} restaurant={restaurant} />
         </div>
-        <div className="div">
+        <div className={styles.div}>
           AAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaecenas
           nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
           vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare

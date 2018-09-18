@@ -14,7 +14,7 @@
   src: url('./fonts/CalibreWeb-Semibold.woff') format('woff');
 }
 
-.contact-container {
+.contactContainer {
   overflow: scroll;
   height: 500px;
   width: 350px !important;
@@ -45,59 +45,59 @@
 }
 
 /* Class Styling */
-.restaurant-times {
+.restaurantTimes {
   display: flex;
   margin-bottom: 8px;
   margin: 4px 24px 4px 0;
 }
 
-.contact-text {
+.contactText {
   padding: 0px 10px;
 }
 
-.restaurant-address:hover {
+.restaurantAddress:hover {
   color: #9c0029;
   cursor: pointer;
 }
 
-.restaurant-phoneNumber:hover {
+.restaurantPhoneNumber:hover {
   color: #9c0029;
   cursor: pointer;
 }
 
-.restaurant-website:hover {
+.restaurantWebsite:hover {
   color: #9c0029;
   cursor: pointer;
 }
 
-.restaurant-directions:hover {
+.restaurantDirections:hover {
   color: #9c0029;
   cursor: pointer;
 }
 
 /* Class Styling */
-.restaurant-times {
+.restaurantTimes {
   display: flex;
   margin-bottom: 8px;
   margin: 4px 24px 4px 0;
 }
 
-.restaurant-address {
+.restaurantAddress {
   display: flex;
   margin-bottom: 8px;
 }
 
-.restaurant-phoneNumber {
+.restaurantPhoneNumber {
   display: flex;
   margin-bottom: 8px;
 }
 
-.restaurant-website {
+.restaurantWebsite {
   display: flex;
   margin-bottom: 8px;
 }
 
-.restaurant-directions {
+.restaurantDirections {
   display: flex;
   margin-bottom: 8px;
 }

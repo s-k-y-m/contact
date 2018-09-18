@@ -37,7 +37,7 @@ svg {
   margin: 0px 24px 4px 0;
 }
 
-.main-container {
+.mainContainer {
   display: flex;
   flex-direction: row;
 }

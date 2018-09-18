@@ -1,20 +1,20 @@
 import React from 'react';
 import { Button, Header, Image, Modal } from 'semantic-ui-react';
-import '../styles/modal.css';
+import styles from '../styles/modal.css';
 
 const ModalModalExample = props => (
   <Modal
-    className="modal"
+    className={styles.modal}
     trigger={
-      <Button className="expandButton">
-        <div className="expandMap">
-          <span className="expandMapText">Expand Map</span>
+      <Button className={`${styles.expandButton} ${styles.button}`}>
+        <div className={styles.expandMap}>
+          <span className={styles.expandMapText}>Expand Map</span>
           <svg
             viewBox="0 0 24 24"
             version="1.1"
             height="24px"
             width="24px"
-            className="expandSvg"
+            className={styles.expandSvg}
           >
             <rect id="Rectangle-3" fill-opacity="0" fill="#FFFFFF" />
             <polyline
@@ -32,8 +32,8 @@ const ModalModalExample = props => (
       </Button>
     }
   >
-    <Modal.Header className="mapTitle">{props.name}</Modal.Header>
-    <Modal.Content className="modalContent" image>
+    <Modal.Header className={styles.mapTitle}>{props.name}</Modal.Header>
+    <Modal.Content className={styles.modalContent} image>
       <Modal.Description>
         <div>
           <iframe
@@ -50,7 +50,7 @@ const ModalModalExample = props => (
         </div>
         <Button
           href="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;"
-          className="modalButton"
+          className={styles.modalButton}
         >
           Get Directions
         </Button>

@@ -9,7 +9,7 @@ import Sticky from './Sticky.jsx';
 import OpenNow from './OpenNow.jsx';
 import Map from './Map/Map.jsx';
 import Map2 from './Map/Map2.jsx';
-import '../styles/contactInfo.css';
+import styles from '../styles/styles.css';
 
 var moment = require('moment');
 
@@ -26,40 +26,39 @@ const ContactInfo = props => {
   var currentDay = moment().format('dddd');
 
   return (
-    <div className="contact-container">
-      <div className="restaurant-times">
+    <div className={styles.contactContainer}>
+      <div className={styles.restaurantTimes}>
         <ClockIcon />
-        <div className="contact-text">
+        <div className={styles.contactText}>
           <OpenNow times={openNow} currentDay={currentDay} />
         </div>
       </div>
-      <div className="restaurant-address">
+      <div className={styles.restaurantAddress}>
         <MapIcon />
-        <p className="contact-text">{address}</p>
+        <p className={styles.contactText}>{address}</p>
       </div>
-      <div className="restaurant-phoneNumber">
+      <div className={styles.restaurantPhoneNumber}>
         <PhoneIcon />
-        <p className="contact-text">{phoneNumber}</p>
+        <p className={styles.contactText}>{phoneNumber}</p>
       </div>
-      <div className="restaurant-website">
+      <div className={styles.restaurantWebsite}>
         <WebsiteIcon />
-        <p className="contact-text">{websiteURL}</p>
+        <p className={styles.contactText}>{websiteURL}</p>
       </div>
-      <div className="restaurant-directions">
+      <div className={styles.restaurantDirections}>
         <DirectionsIcon />
-        <p className="contact-text">Get Directions</p>
+        <p className={styles.contactText}>Get Directions</p>
       </div>
       <div>
-        <div className="restaurant-googleMap">
+        <div className={styles.restaurantGoogleMap}>
           <Map isMarkerShown />
         </div>
       </div>
       <div>
-        <Modal className="modal" name={name} />
+        <Modal className={styles.modal} name={name} />
       </div>
     </div>
   );
 };
 
 export default ContactInfo;
-//

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { VelocityComponent } from 'velocity-react';
+import styles from '../styles/styles.css';
 
 class OpenNow extends React.Component {
   constructor(props) {
@@ -32,35 +33,44 @@ class OpenNow extends React.Component {
     let currentDay = this.props.currentDay;
 
     return (
-      <div className="schedule" onClick={this.handleToggle.bind(this)}>
-        <div id="Monday" className={currentDay === 'Monday' ? 'bold' : ''}>
+      <div className={styles.schedule} onClick={this.handleToggle.bind(this)}>
+        <div id="Monday" className={currentDay === 'Monday' ? styles.bold : ''}>
           Monday.........................
           {monday}
         </div>
-        <div id="Tuesday" className={currentDay === 'Tuesday' ? 'bold' : ''}>
+        <div
+          id="Tuesday"
+          className={currentDay === 'Tuesday' ? styles.bold : ''}
+        >
           Tuesday.........................
           {tuesday}
         </div>
         <div
           id="Wednesday"
-          className={currentDay === 'Wednesday' ? 'bold' : ''}
+          className={currentDay === 'Wednesday' ? styles.bold : ''}
         >
           Wednesday.........................
           {wednesday}
         </div>
-        <div id="Thursday" className={currentDay === 'Thursday' ? 'bold' : ''}>
+        <div
+          id="Thursday"
+          className={currentDay === 'Thursday' ? styles.bold : ''}
+        >
           Thursday.........................
           {thursday}
         </div>
-        <div id="Friday" className={currentDay === 'Friday' ? 'bold' : ''}>
+        <div id="Friday" className={currentDay === 'Friday' ? styles.bold : ''}>
           Friday.........................
           {friday}
         </div>
-        <div id="Saturday" className={currentDay === 'Saturday' ? 'bold' : ''}>
+        <div
+          id="Saturday"
+          className={currentDay === 'Saturday' ? styles.bold : ''}
+        >
           Saturday.........................
           {saturday}
         </div>
-        <div id="Sunday" className={currentDay === 'Sunday' ? 'bold' : ''}>
+        <div id="Sunday" className={currentDay === 'Sunday' ? styles.bold : ''}>
           Sunday.........................
           {sunday}
         </div>
@@ -82,14 +92,19 @@ class OpenNow extends React.Component {
     let currentDay = this.props.currentDay;
 
     return (
-      <div className="wholeSchedule">
-        <div className="oneDaySchedule" onClick={this.handleToggle.bind(this)}>
+      <div className={styles.wholeSchedule}>
+        <div
+          className={styles.oneDaySchedule}
+          onClick={this.handleToggle.bind(this)}
+        >
           <div>
-            <span className="openNowOneLine inline">Open Now</span>{' '}
-            <span className="inline">
+            <span className={`${styles.openNowOneLine}  ${styles.inline}`}>
+              Open Now
+            </span>
+            <span className={styles.inline}>
               {this.props.times[currentDay.toLowerCase()]}
             </span>
-            <span className="chevron">
+            <span className={styles.chevron}>
               <VelocityComponent
                 animation={{ rotateZ: this.state.expanded ? -180 : 0 }}
                 duration={250}
