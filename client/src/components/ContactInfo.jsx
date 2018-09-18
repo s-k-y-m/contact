@@ -9,6 +9,7 @@ import Sticky from './Sticky.jsx';
 import OpenNow from './OpenNow.jsx';
 import Map from './Map/Map.jsx';
 import Map2 from './Map/Map2.jsx';
+import '../styles/contactInfo.css';
 
 var moment = require('moment');
 

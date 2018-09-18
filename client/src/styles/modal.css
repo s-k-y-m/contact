@@ -1,0 +1,86 @@
+/* Font Family */
+@font-face {
+  font-family: 'Calibre-Regular';
+  src: url('./fonts/Calibre-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre-Medium';
+  src: url('./fonts/CalibreWeb-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre-Semibold';
+  src: url('./fonts/CalibreWeb-Semibold.woff') format('woff');
+}
+
+.modal {
+  z-index: 4 !important;
+}
+
+.ui.modal {
+  width: 95%;
+}
+
+.mapTitle {
+  text-align: center;
+  color: white;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Calibre-Medium';
+}
+
+.modalButton {
+  display: flex !important;
+  height: 40px;
+  text-align: center;
+  background: none;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  margin: auto;
+  align-items: center;
+}
+
+.expandMap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandButton svg {
+  margin: 0;
+  stroke: #9c0029;
+}
+
+.expandButton:hover,
+.expandButton:hover svg {
+  color: white !important;
+  stroke: white;
+  background-color: #9c0029 !important;
+}
+
+.expandMapText {
+  display: inline;
+  white-space: nowrap;
+}
+
+.modalButton {
+  padding: 0 16px !important;
+  border: 2px solid #9c0029 !important;
+}
+
+.modalButton:hover {
+  color: white !important;
+  background: #9c0029 !important;
+  padding: 0 16px !important;
+  border: 2px solid #9c0029 !important;
+}

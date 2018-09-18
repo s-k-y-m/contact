@@ -2,6 +2,7 @@ import React from 'react';
 import ContactInfo from './ContactInfo.jsx';
 import axios from 'axios';
 import { VelocityComponent } from 'velocity-react';
+import '../styles/app.css';
 
 var fakeData = require('../../../database/fakeData/fakeRestaurants.js');
 var restaurant = fakeData.oneRestaurant;
