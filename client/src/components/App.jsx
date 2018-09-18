@@ -41,14 +41,6 @@ class App extends React.Component {
     const { restaurant } = this.state;
     return (
       <div>
-        <VelocityComponent
-          animation={{ rotateZ: this.state.expanded ? 0 : -180 }}
-          duration={500}
-        >
-          <h1 className="logo" onClick={this.handleToggle.bind(this)}>
-            Zagat
-          </h1>
-        </VelocityComponent>
         <div className={styles.mainContainer}>
           <p className={`${styles.placeHolderText} ${styles.placeholder}`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
