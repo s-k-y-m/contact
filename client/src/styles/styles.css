@@ -49,6 +49,7 @@ svg {
 }
 
 .contactContainer {
+  margin-top: 75px;
   flex: 1;
   color: #101820;
   display: table-cell;
