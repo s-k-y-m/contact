@@ -29,7 +29,12 @@ path {
   stroke: "#b70038";
 }
 
-svg {
+.restaurantTimes svg,
+.restaurantAddress svg,
+.restaurantPhoneNumber svg,
+.restaurantWebsite svg,
+.restaurantDirections svg,
+.contactText svg {
   margin: 0px 24px 4px 0;
 }
 
