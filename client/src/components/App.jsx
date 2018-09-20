@@ -18,7 +18,7 @@ class App extends React.Component {
   componentDidMount() {
     var restaurant;
     axios
-      .get("http://localhost:3005/restaurants/name")
+      .get("http://localhost:3005/restaurants/Hilll Group")
       .then(data => {
         restaurant = data.data;
         this.setState({
